@@ -2,11 +2,14 @@
 //I have installed react router and material UI for UI elements and components to the repository
 //To avoid merge conflicts, do not edit this page. Leave it for the scrum master.
 //I have a sample DB with products run with npm run server
+import Productcard from "./component/Productcard"
 
 function App() {
 
   return (
     <>
+    
+      <Productcard />
     </>
   )
 }
