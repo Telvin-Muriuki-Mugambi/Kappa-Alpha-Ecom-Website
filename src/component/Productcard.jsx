@@ -1,4 +1,4 @@
-import react, { useState } from 'react'
+import { useState } from 'react'
 import carData from "/db.json"
 import "./Product.css";
 
@@ -7,37 +7,38 @@ function Productcard() {
   const [searchQuery, setSearchQuery] = useState("")
   //search functionality
   const handleSearch = (event) => {
-    setSearchQuery(event.target.value)
+    const query = event.target.value
+    setSearchQuery(query)
     const filteredProducts = carData.products.filter((product) =>
-      product.name.toLowerCase().includes(event.target.value.toLowerCase())
+      product.name.toLowerCase().includes(query.toLowerCase())
     )
     setProducts(filteredProducts)
   }
 
   return (
-    <div className='product-card'>
-      <input
-        type="text"
-        placeholder="Search products..."
-        value={searchQuery}
-        onChange={handleSearch}
-      />
-      {products.map((product) => (
-        <div key={product.id} className='card'>
-          <h2>{product.name}</h2>
-          <p>{product.description}</p>
-          <p>${product.price}</p>
-          <p> {product.category}</p>
-          <p> {product.origin}</p>
-        </div>
-      ))}
+    <div>
+      <div className='shop-page'>
+        <input
+          type="text"
+          placeholder="Search products..."
+          value={searchQuery}
+          onChange={handleSearch}
+        />
+      </div>
+      <div className='cards-grid'>
+        {products.map((product) => (
+          <div key={product.id} className='card'>
+            <h2>{product.name}</h2>
+        <p className='description'>Description: {product.description}</p>
+            <p className='price'>Price: ${product.price.toFixed(2)}</p>
+            <p className='category'>Category: {product.category}</p>
+            <p className='origin'>Origin: {product.origin}</p>
+          </div>
+        ))}
+      </div>
     </div>
   )
-
-//search functionality
 }
-
-  
 
 export default Productcard
 
