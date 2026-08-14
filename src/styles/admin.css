@@ -1,0 +1,89 @@
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@500;700&display=swap');
+
+/* Reset and full page setup with car backdrop */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #050505;
+  background-image: 
+    linear-gradient(to right, rgba(5, 5, 5, 0.95) 35%, rgba(5, 5, 5, 0.35) 75%),
+    url('../pages/car,jpg.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Rajdhani', sans-serif;
+  color: #d4af37;
+  padding: 40px;
+}
+
+/* Header styling */
+h1, h2, .portal-title {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffaa00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 170, 0, 0.5);
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+/* Carbon Fiber / Dark Glass Form Card */
+.admin-card, .form-container, form {
+  max-width: 440px;
+  background: 
+    radial-gradient(circle at top, rgba(255, 170, 0, 0.08), transparent 70%),
+    repeating-linear-gradient(45deg, #111 0, #111 2px, #181818 2px, #181818 4px);
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  padding: 28px;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25), inset 0 0 15px rgba(0,0,0,0.8);
+  margin-bottom: 40px;
+}
+
+/* Inputs with Dark Background and Gold Focus */
+input, textarea, select {
+  width: 100%;
+  background-color: rgba(10, 10, 10, 0.85);
+  border: 1px solid #332d18;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #ffaa00;
+  box-shadow: 0 0 8px rgba(255, 170, 0, 0.4);
+}
+
+/* Metallic Gold Save Button */
+button[type="submit"], button {
+  width: 100%;
+  padding: 14px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000000;
+  background: linear-gradient(180deg, #ffd700 0%, #b8860b 100%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  transition: transform 0.2s, filter 0.2s;
+}
+
+button[type="submit"]:hover, button:hover {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+}
