@@ -128,7 +128,9 @@ function EditProductPage() {
           UPDATE PRODUCT
         </button>
       </form>
+      
     </section>
+    
   );
 }
 
