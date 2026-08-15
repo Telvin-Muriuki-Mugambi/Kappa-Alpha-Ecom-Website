@@ -31,18 +31,13 @@
   color: #edf6ff;
 }
 
-.admin-header {
-  background: linear-gradient(90deg, #0a2247, #123f7a);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
 .admin-nav {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 1.5rem;
+  padding: 0.8rem 1.5rem 0.2rem;
 }
 
 .admin-link {
@@ -60,3 +55,4 @@
   opacity: 0.9;
   background: rgba(255,255,255,0.04);
 }
+
