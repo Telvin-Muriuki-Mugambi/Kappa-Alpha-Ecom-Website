@@ -1,102 +1,88 @@
-/* Main page layout */
 .shop-page {
   display: flex;
   flex-direction: column;
- background: linear-gradient(135deg, #2b1055, #7579ff, #b224ef);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 25px;
+  background: linear-gradient(135deg, #edfdf2, #dff4e8);
+  padding: 20px 25px 10px;
   box-sizing: border-box;
-  gap: 20px;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Compact search container that doesn't stretch */
-.sidebar {
-  width: fit-content;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 10px 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Search input box */
 .search-input {
-  width: 240px;
-  padding: 10px 14px;
-  border-radius: 8px;
-  border: 2px solid rgba(255, 105, 180, 0.6);
-  background: rgba(255, 255, 255, 0.95);
+  width: min(320px, 100%);
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid #bfe2cb;
+  background: #fff;
   font-size: 14px;
+  color: #1b3b2d;
   outline: none;
   box-sizing: border-box;
-  color: #333;
 }
 
 .search-input:focus {
-  border-color: #ff69b4;
-  box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+  border-color: #1d7c52;
+  box-shadow: 0 0 0 3px rgba(29, 124, 82, 0.15);
 }
 
-/* Grid layout for cards */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
+  padding: 20px 25px 25px;
+  background: #f2fbf5;
 }
 
-/* Individual Card Box styling */
 .card {
-  background: rgba(255, 255, 255, 0.95);
+  background: #ffffff;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(20, 73, 51, 0.08);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid rgba(255, 105, 180, 0.3);
+  border: 1px solid #d8efe0;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-sizing: border-box;
   min-height: 180px;
-  text-align: center;
+  text-align: left;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(117, 121, 255, 0.4);
-  border-color: #7579ff;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(20, 73, 51, 0.12);
+  border-color: #7ec8a0;
 }
 
 .card h2 {
-  font-size: 16px;
-  margin: 0 0 8px 0;
-  color: #2b1055;
+  font-size: 1rem;
+  margin: 0 0 8px;
+  color: #123d2f;
   font-weight: 700;
 }
 
 .card p {
-  font-size: 13px;
-  color: #555;
+  font-size: 0.82rem;
+  color: #4d665c;
   margin: 4px 0;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .origin {
   font-style: italic;
-  color: #777;
+  color: #678376;
 }
 
 .category {
-  font-weight: 600;
-  color: #b224ef;
-  font-size: 12px;
+  font-weight: 700;
+  color: #1d7c52;
+  font-size: 0.72rem;
 }
 
 .price {
   font-weight: 800;
-  font-size: 15px;
+  font-size: 0.9rem;
   margin-top: 10px;
-  padding-top: 6px;
-  border-top: 1px dashed #ddd;
-  color: #ff69b4;
+  padding-top: 8px;
+  border-top: 1px dashed #d7e7dd;
+  color: #0f5c3d;
 }
