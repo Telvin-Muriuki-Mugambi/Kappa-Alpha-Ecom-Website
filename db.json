@@ -1,205 +1,204 @@
 {
   "products": [
     {
-      "id": "rr-001",
-      "name": "Phantom VIII",
-      "description": "Ultra-luxury flagship sedan featuring a twin-turbo V12 engine and handcrafted interior.",
-      "category": "Rolls Royce",
-      "origin": "United Kingdom",
-      "price": 490000
+      "id": "med-001",
+      "name": "Panadol Extra Tablets (10s)",
+      "description": "Fast relief from tough pain including headache, toothache, and fever; enriched with caffeine.",
+      "category": "Analgesics & Antipyretics",
+      "origin": "Kenya",
+      "price": 120.00
     },
     {
-      "id": "rr-002",
-      "name": "Ghost",
-      "description": "Contemporary luxury sedan offering Effortless V12 performance and Planar suspension.",
-      "category": "Rolls Royce",
-      "origin": "United Kingdom",
-      "price": 350000
+      "id": "med-002",
+      "name": "Mara-Moja Painkiller Tablets (20s)",
+      "description": "Affordable dual-action pain reliever containing Paracetamol and Aspirin for fast body pain relief.",
+      "category": "Analgesics & Antipyretics",
+      "origin": "Kenya",
+      "price": 80.00
     },
     {
-      "id": "rr-003",
-      "name": "Cullinan",
-      "description": "High-bodied all-wheel-drive luxury SUV designed for off-road luxury travel.",
-      "category": "Rolls Royce",
-      "origin": "United Kingdom",
-      "price": 390000
+      "id": "med-003",
+      "name": "Cetamol Paracetamol 500mg Tablets (100s)",
+      "description": "Bulk pack of generic paracetamol for fever reduction and mild to moderate pain management.",
+      "category": "Analgesics & Antipyretics",
+      "origin": "Kenya",
+      "price": 150.00
     },
     {
-      "id": "rr-004",
-      "name": "Spectre",
-      "description": "Fully electric ultra-luxury coupe delivering silent, instantaneous torque.",
-      "category": "Rolls Royce",
-      "origin": "United Kingdom",
-      "price": 420000
+      "id": "med-004",
+      "name": "Brufen 400mg Ibuprofen Tablets (10s)",
+      "description": "Non-steroidal anti-inflammatory drug (NSAID) for relief from swelling, joint pain, and cramps.",
+      "category": "Analgesics & Antipyretics",
+      "origin": "Kenya",
+      "price": 90.00
     },
     {
-      "id": "rr-005",
-      "name": "Dawn",
-      "description": "Handbuilt open-top four-seater grand tourer with a refined fabric soft-top.",
-      "category": "Rolls Royce",
-      "origin": "United Kingdom",
-      "price": 360000
+      "id": "med-005",
+      "name": "Calpol Infant Suspension Syrup (100ml)",
+      "description": "Strawberry-flavored paracetamol syrup designed for gentle fever and pain relief in infants.",
+      "category": "Analgesics & Antipyretics",
+      "origin": "Kenya",
+      "price": 380.00
     },
     {
-      "id": "ben-001",
-      "name": "Continental GT Speed",
-      "description": "Performance-focused luxury grand tourer with an advanced hybrid powertrain.",
-      "category": "Bentley",
-      "origin": "United Kingdom",
-      "price": 302000
+      "id": "med-006",
+      "name": "Amoxil 500mg Amoxicillin Capsules (10s)",
+      "description": "Essential broad-spectrum penicillin antibiotic for treating respiratory and bacterial infections.",
+      "category": "Antibiotics & Anti-infectives",
+      "origin": "Kenya",
+      "price": 200.00
     },
     {
-      "id": "ben-002",
-      "name": "Flying Spur",
-      "description": "Four-door luxury sports sedan combining limousine comfort with driver engagement.",
-      "category": "Bentley",
-      "origin": "United Kingdom",
-      "price": 215000
+      "id": "med-007",
+      "name": "Flagyl 200mg Metronidazole Tablets (20s)",
+      "description": "Widely used anti-protozoal and antibacterial drug for stomach upset and intestinal infections.",
+      "category": "Antibiotics & Anti-infectives",
+      "origin": "Kenya",
+      "price": 110.00
     },
     {
-      "id": "ben-003",
-      "name": "Bentayga EWB",
-      "description": "Extended wheelbase luxury SUV prioritizing rear-cabin passenger comfort.",
-      "category": "Bentley",
+      "id": "med-008",
+      "name": "Augmentin 625mg Tablets (14s)",
+      "description": "Co-amoxiclav combination antibiotic for severe bacterial chest, ear, and urinary tract infections.",
+      "category": "Antibiotics & Anti-infectives",
       "origin": "United Kingdom",
-      "price": 230000
+      "price": 850.00
     },
     {
-      "id": "ben-004",
-      "name": "Batur",
-      "description": "Exclusive limited-run coachbuilt grand tourer showcasing Bentley's design future.",
-      "category": "Bentley",
-      "origin": "United Kingdom",
-      "price": 2100000
+      "id": "med-009",
+      "name": "Cipro antibiotic 500mg Ciprofloxacin (10s)",
+      "description": "Broad-spectrum fluoroquinolone antibiotic used for typhoid, urinary, and gut infections.",
+      "category": "Antibiotics & Anti-infectives",
+      "origin": "India",
+      "price": 180.00
     },
     {
-      "id": "ben-005",
-      "name": "Bacalar",
-      "description": "Rare two-seat open-air roofless grand tourer handcrafted by Mulliner.",
-      "category": "Bentley",
-      "origin": "United Kingdom",
-      "price": 1900000
+      "id": "med-010",
+      "name": "Azuma 500mg Azithromycin Tablets (3s)",
+      "description": "Short-course 3-day macrolide antibiotic for upper respiratory tract and skin infections.",
+      "category": "Antibiotics & Anti-infectives",
+      "origin": "Kenya",
+      "price": 350.00
     },
     {
-      "id": "mb-001",
-      "name": "Mercedes-AMG GT Black Series",
-      "description": "Track-focused supercar with a flat-plane crank V8 and active aerodynamics.",
-      "category": "Mercedes",
+      "id": "med-011",
+      "name": "Benylin Expected Wet Cough Syrup (100ml)",
+      "description": "Expectorant syrup that breaks down thick chest mucus and thins phlegm for quick relief.",
+      "category": "Cough & Cold Remedies",
+      "origin": "Kenya",
+      "price": 450.00
+    },
+    {
+      "id": "med-012",
+      "name": "Tuspel Plus Expectorant Cough Syrup (100ml)",
+      "description": "Budget-friendly cough and decongestant syrup tailored for common cold symptoms.",
+      "category": "Cough & Cold Remedies",
+      "origin": "Kenya",
+      "price": 225.00
+    },
+    {
+      "id": "med-013",
+      "name": "Actifed Wet Cough & Cold Syrup (100ml)",
+      "description": "Combination syrup relieving runny nose, watery eyes, and chest congestion.",
+      "category": "Cough & Cold Remedies",
+      "origin": "Kenya",
+      "price": 420.00
+    },
+    {
+      "id": "med-014",
+      "name": "Ascoril Expectorant Syrup (110ml)",
+      "description": "Mucolytic and bronchodilator syrup that opens up airways for productive coughs.",
+      "category": "Cough & Cold Remedies",
+      "origin": "India",
+      "price": 380.00
+    },
+    {
+      "id": "med-015",
+      "name": "Trimex Paediatric Cough Syrup (100ml)",
+      "description": "Gentle cough expectorant formulated specifically for young children and toddlers.",
+      "category": "Cough & Cold Remedies",
+      "origin": "Kenya",
+      "price": 185.00
+    },
+    {
+      "id": "med-016",
+      "name": "Omeprazole 20mg Gastro-Resistant Capsules (14s)",
+      "description": "Proton pump inhibitor (PPI) that reduces excess stomach acid, heart burn, and ulcers.",
+      "category": "Gastrointestinal Health",
+      "origin": "Kenya",
+      "price": 150.00
+    },
+    {
+      "id": "med-017",
+      "name": "Eno Antacid Effervescent Powder (5g Sachet)",
+      "description": "Fast-acting antacid powder providing instant cooling relief from acidity and indigestion.",
+      "category": "Gastrointestinal Health",
+      "origin": "Kenya",
+      "price": 30.00
+    },
+    {
+      "id": "med-018",
+      "name": "Gestid Chewable Antacid Tablets (10s)",
+      "description": "Low-cost minty chewable antacid neutralizing stomach acid for mwanainchi.",
+      "category": "Gastrointestinal Health",
+      "origin": "Kenya",
+      "price": 70.00
+    },
+    {
+      "id": "med-019",
+      "name": "Buscopan 10mg Hyoscine Tablets (10s)",
+      "description": "Targeted anti-spasmodic tablet relieving abdominal cramps, spasms, and stomach pain.",
+      "category": "Gastrointestinal Health",
       "origin": "Germany",
-      "price": 325000
+      "price": 260.00
     },
     {
-      "id": "mb-002",
-      "name": "Mercedes-Maybach S 680",
-      "description": "Executive chauffeur sedan equipped with a V12 engine and first-class seating.",
-      "category": "Mercedes",
-      "origin": "Germany",
-      "price": 234000
+      "id": "med-020",
+      "name": "Actal Antacid Tablets (20s)",
+      "description": "Standard over-the-counter chewable tablets for stomach upset and acid reflux.",
+      "category": "Gastrointestinal Health",
+      "origin": "Kenya",
+      "price": 100.00
     },
     {
-      "id": "mb-003",
-      "name": "Mercedes-AMG G 63",
-      "description": "Iconic high-performance off-road vehicle powered by a twin-turbo V8.",
-      "category": "Mercedes",
-      "origin": "Germany",
-      "price": 183000
+      "id": "med-021",
+      "name": "Coartem 20/120mg Artemether/Lumefantrine Tablets (24s)",
+      "description": "Gold-standard Artemisinin-based Combination Therapy (ACT) for acute uncomplicated malaria.",
+      "category": "Antimalarials & Antiparasitics",
+      "origin": "Switzerland",
+      "price": 600.00
     },
     {
-      "id": "mb-004",
-      "name": "Mercedes-AMG SL 63",
-      "description": "2+2 roadster combining sport convertible dynamics with luxury technology.",
-      "category": "Mercedes",
-      "origin": "Germany",
-      "price": 187000
+      "id": "med-022",
+      "name": "Artefan 20/120mg Malaria Tablets (24s)",
+      "description": "Affordable generic malaria treatment regimen widely accessible in local pharmacies.",
+      "category": "Antimalarials & Antiparasitics",
+      "origin": "Kenya",
+      "price": 250.00
     },
     {
-      "id": "mb-005",
-      "name": "Mercedes-Maybach GLS 600",
-      "description": "Ultra-luxury full-size SUV featuring executive rear seats and air suspension.",
-      "category": "Mercedes",
-      "origin": "Germany",
-      "price": 178000
+      "id": "med-023",
+      "name": "Zentel 400mg Albendazole Tablet (1s)",
+      "description": "Single-dose deworming tablet for adults and children against roundworms and hookworms.",
+      "category": "Antimalarials & Antiparasitics",
+      "origin": "Kenya",
+      "price": 100.00
     },
     {
-      "id": "am-001",
-      "name": "DB12",
-      "description": "Next-generation super tourer featuring 671 horsepower and updated infotainment.",
-      "category": "Aston Martin",
-      "origin": "United Kingdom",
-      "price": 245000
+      "id": "med-024",
+      "name": "Dawa Wormer Mebendazole 100mg Tablets (6s)",
+      "description": "Pocket-friendly complete family deworming chewable tablets course.",
+      "category": "Antimalarials & Antiparasitics",
+      "origin": "Kenya",
+      "price": 60.00
     },
     {
-      "id": "am-002",
-      "name": "DBS 770 Ultimate",
-      "description": "Flagship grand tourer representing the final iteration of the DBS moniker.",
-      "category": "Aston Martin",
-      "origin": "United Kingdom",
-      "price": 387000
-    },
-    {
-      "id": "am-003",
-      "name": "DBX707",
-      "description": "Ultra-high-performance luxury SUV rated at 707 horsepower.",
-      "category": "Aston Martin",
-      "origin": "United Kingdom",
-      "price": 242000
-    },
-    {
-      "id": "am-004",
-      "name": "Valkyrie",
-      "description": "F1-inspired hypercar with a high-revving naturally aspirated V12 hybrid.",
-      "category": "Aston Martin",
-      "origin": "United Kingdom",
-      "price": 3500000
-    },
-    {
-      "id": "am-005",
-      "name": "Vantage",
-      "description": "Agile two-door sports car driven by a front-mid mounted twin-turbo V8.",
-      "category": "Aston Martin",
-      "origin": "United Kingdom",
-      "price": 191000
-    },
-    {
-      "id": "por-001",
-      "name": "911 GT3 RS",
-      "description": "Track-optimized sports car featuring extreme aerodynamics and naturally aspirated flat-six.",
-      "category": "Porsche",
-      "origin": "Germany",
-      "price": 241300
-    },
-    {
-      "id": "por-002",
-      "name": "911 Turbo S",
-      "description": "All-weather supercar with all-wheel drive and twin-turbocharged flat-six performance.",
-      "category": "Porsche",
-      "origin": "Germany",
-      "price": 230400
-    },
-    {
-      "id": "por-003",
-      "name": "Taycan Turbo S",
-      "description": "All-electric performance sedan delivering high acceleration and fast charging.",
-      "category": "Porsche",
-      "origin": "Germany",
-      "price": 209000
-    },
-    {
-      "id": "por-004",
-      "name": "Panamera Turbo E-Hybrid",
-      "description": "Four-door sports sedan combining V8 hybrid output with luxury cruising capability.",
-      "category": "Porsche",
-      "origin": "Germany",
-      "price": 191000
-    },
-    {
-      "id": "por-005",
-      "name": "718 Cayman GT4 RS",
-      "description": "Mid-engine sports coupe incorporating high-rpm air intakes behind the side windows.",
-      "category": "Porsche",
-      "origin": "Germany",
-      "price": 160700
+      "id": "med-025",
+      "name": "P-Alaxin Artemether/Lumefantrine Oral Dry Syrup (60ml)",
+      "description": "Palatable pediatric antimalarial suspension for treating malaria in young children.",
+      "category": "Antimalarials & Antiparasitics",
+      "origin": "Kenya",
+      "price": 320.00
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
