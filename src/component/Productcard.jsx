@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import carData from "/db.json"
 import "./Product.css";
+import Header from './Header';
 
 function Productcard() {
   const [products, setProducts] = useState(carData.products)
@@ -17,6 +18,7 @@ function Productcard() {
 
   return (
     <div>
+      < Header/>
       <div className='shop-page'>
         <input
           type="text"

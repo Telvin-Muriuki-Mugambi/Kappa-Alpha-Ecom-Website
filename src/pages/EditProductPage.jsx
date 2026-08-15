@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/admin.css';
 
 function EditProductPage() {
   const [productId, setProductId] = useState('');
@@ -60,7 +61,9 @@ function EditProductPage() {
           UPDATE PRICE
         </button>
       </form>
+      
     </section>
+    
   );
 }
 
