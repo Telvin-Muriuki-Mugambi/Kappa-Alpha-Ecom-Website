@@ -1,15 +1,16 @@
 import { NavLink, Outlet } from 'react-router-dom';
+import '../styles/mainpage.css';
 
 function Admin() {
   return (
     <div className="admin-layout">
-      <h1>Admin</h1>
-
-      <nav className="admin-nav">
-        <NavLink to="/admin">Products</NavLink>
-        <NavLink to="/admin/add">Add Product</NavLink>
-        <NavLink to="/admin/edit/1">Edit Product</NavLink>
-      </nav>
+      <header className="admin-header">
+        <nav className="admin-nav" aria-label="Admin navigation">
+          <NavLink to="/admin" className="admin-link">Products</NavLink>
+          <NavLink to="/admin/add" className="admin-link">Add Product</NavLink>
+          <NavLink to="/admin/edit/1" className="admin-link">Edit Product</NavLink>
+        </nav>
+      </header>
 
       <Outlet />
     </div>

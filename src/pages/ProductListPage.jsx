@@ -29,7 +29,7 @@ function ProductListPage() {
   };
 
   return (
-    <section className="list-section">
+    <section className="admin-page list-section">
       <h2 className="section-title">Product List</h2>
 
       {error ? (

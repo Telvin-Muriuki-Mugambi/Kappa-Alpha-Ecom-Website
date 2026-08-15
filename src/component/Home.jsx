@@ -5,8 +5,11 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <h1>Home Page</h1>
-        <p>Welcome to the landing page.</p>
+        <h1>Drive Your Next Legend</h1>
+        <p>
+          Discover premium performance cars, luxury classics, and everyday drivers
+          curated for drivers who value power, precision, and style.
+        </p>
       </main>
     </>
   );

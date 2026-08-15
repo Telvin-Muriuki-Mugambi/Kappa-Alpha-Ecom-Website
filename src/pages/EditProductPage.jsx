@@ -26,7 +26,7 @@ function EditProductPage() {
   };
 
   return (
-    <section className="form-section">
+    <section className="admin-page form-section">
       <h2 className="section-title">Edit Product</h2>
 
       <form onSubmit={handleUpdatePrice} className="admin-form">
