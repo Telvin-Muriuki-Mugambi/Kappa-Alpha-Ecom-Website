@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 
 const ProductContext = createContext(null);
 
-async function ProductContextProvider({children}){
+async function ProductsProvider({children}){
     //State for storing the products
     const [products, setProducts] = useState([]);
     //State for loading.Used when fetching data
@@ -101,4 +101,20 @@ async function ProductContextProvider({children}){
             return null;
         }
     };
+
+    return (
+        <ProductContext.Provider
+            value = {{
+                products,
+                loading,
+                errror,
+                fetchProducts,
+                addProduct,
+                deleteProduct,
+                updateProduct
+            }}
+        >
+            {children}
+        </ProductContext.Provider>
+    )
 }
