@@ -9,6 +9,7 @@ function AddProductPage() {
   const [formData, setFormData] = useState({
     name: '',
     description: '',
+    category: '',
     origin: '',
     price: ''
   });
@@ -33,7 +34,7 @@ function AddProductPage() {
 
       if (saved) {
         console.log('Product added:', saved);
-        setFormData({ name: '', description: '', origin: '', price: '' });
+        setFormData({ name: '', description: '', origin: '', category:'', price: '' });
       }
     } catch (err) {
       console.error('Error adding product:', err);
@@ -83,6 +84,18 @@ function AddProductPage() {
             name="origin"
             placeholder="Origin"
             value={formData.origin}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="field-group">
+          <span className="field-icon">📂</span>
+          <input
+            type="text"
+            name="category"
+            placeholder="Category"
+            value={formData.category}
             onChange={handleChange}
             required
           />
