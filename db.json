@@ -6,7 +6,7 @@
       "description": "Ultra-luxury flagship sedan featuring a twin-turbo V12 engine and handcrafted interior.",
       "category": "Rolls Royce",
       "origin": "United Kingdom",
-      "price": 490000.00
+      "price": 490000
     },
     {
       "id": "rr-002",
@@ -14,7 +14,7 @@
       "description": "Contemporary luxury sedan offering Effortless V12 performance and Planar suspension.",
       "category": "Rolls Royce",
       "origin": "United Kingdom",
-      "price": 350000.00
+      "price": 350000
     },
     {
       "id": "rr-003",
@@ -22,7 +22,7 @@
       "description": "High-bodied all-wheel-drive luxury SUV designed for off-road luxury travel.",
       "category": "Rolls Royce",
       "origin": "United Kingdom",
-      "price": 390000.00
+      "price": 390000
     },
     {
       "id": "rr-004",
@@ -30,7 +30,7 @@
       "description": "Fully electric ultra-luxury coupe delivering silent, instantaneous torque.",
       "category": "Rolls Royce",
       "origin": "United Kingdom",
-      "price": 420000.00
+      "price": 420000
     },
     {
       "id": "rr-005",
@@ -38,7 +38,7 @@
       "description": "Handbuilt open-top four-seater grand tourer with a refined fabric soft-top.",
       "category": "Rolls Royce",
       "origin": "United Kingdom",
-      "price": 360000.00
+      "price": 360000
     },
     {
       "id": "ben-001",
@@ -46,7 +46,7 @@
       "description": "Performance-focused luxury grand tourer with an advanced hybrid powertrain.",
       "category": "Bentley",
       "origin": "United Kingdom",
-      "price": 302000.00
+      "price": 302000
     },
     {
       "id": "ben-002",
@@ -54,7 +54,7 @@
       "description": "Four-door luxury sports sedan combining limousine comfort with driver engagement.",
       "category": "Bentley",
       "origin": "United Kingdom",
-      "price": 215000.00
+      "price": 215000
     },
     {
       "id": "ben-003",
@@ -62,7 +62,7 @@
       "description": "Extended wheelbase luxury SUV prioritizing rear-cabin passenger comfort.",
       "category": "Bentley",
       "origin": "United Kingdom",
-      "price": 230000.00
+      "price": 230000
     },
     {
       "id": "ben-004",
@@ -70,7 +70,7 @@
       "description": "Exclusive limited-run coachbuilt grand tourer showcasing Bentley's design future.",
       "category": "Bentley",
       "origin": "United Kingdom",
-      "price": 2100000.00
+      "price": 2100000
     },
     {
       "id": "ben-005",
@@ -78,7 +78,7 @@
       "description": "Rare two-seat open-air roofless grand tourer handcrafted by Mulliner.",
       "category": "Bentley",
       "origin": "United Kingdom",
-      "price": 1900000.00
+      "price": 1900000
     },
     {
       "id": "mb-001",
@@ -86,7 +86,7 @@
       "description": "Track-focused supercar with a flat-plane crank V8 and active aerodynamics.",
       "category": "Mercedes",
       "origin": "Germany",
-      "price": 325000.00
+      "price": 325000
     },
     {
       "id": "mb-002",
@@ -94,7 +94,7 @@
       "description": "Executive chauffeur sedan equipped with a V12 engine and first-class seating.",
       "category": "Mercedes",
       "origin": "Germany",
-      "price": 234000.00
+      "price": 234000
     },
     {
       "id": "mb-003",
@@ -102,7 +102,7 @@
       "description": "Iconic high-performance off-road vehicle powered by a twin-turbo V8.",
       "category": "Mercedes",
       "origin": "Germany",
-      "price": 183000.00
+      "price": 183000
     },
     {
       "id": "mb-004",
@@ -110,7 +110,7 @@
       "description": "2+2 roadster combining sport convertible dynamics with luxury technology.",
       "category": "Mercedes",
       "origin": "Germany",
-      "price": 187000.00
+      "price": 187000
     },
     {
       "id": "mb-005",
@@ -118,7 +118,7 @@
       "description": "Ultra-luxury full-size SUV featuring executive rear seats and air suspension.",
       "category": "Mercedes",
       "origin": "Germany",
-      "price": 178000.00
+      "price": 178000
     },
     {
       "id": "am-001",
@@ -126,7 +126,7 @@
       "description": "Next-generation super tourer featuring 671 horsepower and updated infotainment.",
       "category": "Aston Martin",
       "origin": "United Kingdom",
-      "price": 245000.00
+      "price": 245000
     },
     {
       "id": "am-002",
@@ -134,7 +134,7 @@
       "description": "Flagship grand tourer representing the final iteration of the DBS moniker.",
       "category": "Aston Martin",
       "origin": "United Kingdom",
-      "price": 387000.00
+      "price": 387000
     },
     {
       "id": "am-003",
@@ -142,7 +142,7 @@
       "description": "Ultra-high-performance luxury SUV rated at 707 horsepower.",
       "category": "Aston Martin",
       "origin": "United Kingdom",
-      "price": 242000.00
+      "price": 242000
     },
     {
       "id": "am-004",
@@ -150,7 +150,7 @@
       "description": "F1-inspired hypercar with a high-revving naturally aspirated V12 hybrid.",
       "category": "Aston Martin",
       "origin": "United Kingdom",
-      "price": 3500000.00
+      "price": 3500000
     },
     {
       "id": "am-005",
@@ -158,7 +158,7 @@
       "description": "Agile two-door sports car driven by a front-mid mounted twin-turbo V8.",
       "category": "Aston Martin",
       "origin": "United Kingdom",
-      "price": 191000.00
+      "price": 191000
     },
     {
       "id": "por-001",
@@ -166,7 +166,7 @@
       "description": "Track-optimized sports car featuring extreme aerodynamics and naturally aspirated flat-six.",
       "category": "Porsche",
       "origin": "Germany",
-      "price": 241300.00
+      "price": 241300
     },
     {
       "id": "por-002",
@@ -174,7 +174,7 @@
       "description": "All-weather supercar with all-wheel drive and twin-turbocharged flat-six performance.",
       "category": "Porsche",
       "origin": "Germany",
-      "price": 230400.00
+      "price": 230400
     },
     {
       "id": "por-003",
@@ -182,7 +182,7 @@
       "description": "All-electric performance sedan delivering high acceleration and fast charging.",
       "category": "Porsche",
       "origin": "Germany",
-      "price": 209000.00
+      "price": 209000
     },
     {
       "id": "por-004",
@@ -190,7 +190,7 @@
       "description": "Four-door sports sedan combining V8 hybrid output with luxury cruising capability.",
       "category": "Porsche",
       "origin": "Germany",
-      "price": 191000.00
+      "price": 191000
     },
     {
       "id": "por-005",
@@ -198,7 +198,8 @@
       "description": "Mid-engine sports coupe incorporating high-rpm air intakes behind the side windows.",
       "category": "Porsche",
       "origin": "Germany",
-      "price": 160700.00
+      "price": 160700
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

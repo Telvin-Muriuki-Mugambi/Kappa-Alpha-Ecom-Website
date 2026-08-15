@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import Header from '../component/Header';
 import '../styles/admin.css';
+import { useProducts } from '../hooks/ProductContext';
 
 function AddProductPage() {
+  const {addProduct} = useProducts();
+  
   const [formData, setFormData] = useState({
     name: '',
     description: '',
+    category: '',
     origin: '',
     price: ''
   });
@@ -17,37 +21,39 @@ function AddProductPage() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:3000/products', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log('Product added:', data);
-        setFormData({ name: '', description: '', origin: '', price: '' });
-      })
-      .catch((err) => console.error('Error adding product:', err));
+    try {
+      const productToAdd = {
+        ...formData,
+        price: parseFloat(formData.price)
+      };
+
+      const saved = await addProduct(productToAdd);
+
+      if (saved) {
+        console.log('Product added:', saved);
+        setFormData({ name: '', description: '', origin: '', category:'', price: '' });
+      }
+    } catch (err) {
+      console.error('Error adding product:', err);
+    }
   };
+  console.log(`This is new data added ${formData}`);
 
   return (
     <section className="admin-page form-section">
-      <Header />
+
       <h2 className="section-title">Add Product</h2>
 
       <form onSubmit={handleSubmit} className="admin-form">
         <div className="form-title">
-          <span className="icon">🏎️</span>
           <h3>ADD PRODUCT</h3>
         </div>
 
         <div className="field-group">
-          <span className="field-icon">🏷️</span>
+          <span className="field-icon">Car Name</span>
           <input
             type="text"
             name="name"
@@ -59,7 +65,7 @@ function AddProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">📄</span>
+          <span className="field-icon">Car Description</span>
           <input
             type="text"
             name="description"
@@ -71,7 +77,7 @@ function AddProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">🌐</span>
+          <span className="field-icon">Car Origin</span>
           <input
             type="text"
             name="origin"
@@ -83,7 +89,19 @@ function AddProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">$</span>
+          <span className="field-icon">Category</span>
+          <input
+            type="text"
+            name="category"
+            placeholder="Category"
+            value={formData.category}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
+        <div className="field-group">
+          <span className="field-icon">Car Price</span>
           <input
             type="number"
             name="price"
