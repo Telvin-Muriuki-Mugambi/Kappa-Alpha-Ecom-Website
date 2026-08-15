@@ -18,6 +18,7 @@ function Productcard() {
     <div>
       <div className='shop-page'>
         <input
+          className='search-input'
           type="text"
           placeholder="Search products..."
           value={searchQuery}

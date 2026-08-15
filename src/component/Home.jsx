@@ -3,16 +3,26 @@ import '../styles/home.css';
 export default function Home() {
   return (
     <main className="landing-page">
-      <div className="home">
-        <span className="home-tag">Kappa Alpha</span>
-        <h1>Drive the experience. Own the moment.</h1>
+      <section className="hero">
+        <span className="tag">Kappa Alpha Wellness store</span>
+        <h1>Healthy living, delivered.</h1>
         <p>
-          Discover a curated collection of standout cars built for drivers who
-          want power, precision, and presence in every mile. From thrilling
-          performance machines to refined everyday icons, Kappa Alpha brings the
-          road to life.
+          Find trusted medicines, everyday health essentials, vitamins, and
+          personal care products for your family. Quick support, reliable
+          products, and simple care whenever you need it.
         </p>
-      </div>
+
+        <div className="actions">
+          <button>Shop now</button>
+          <button className="secondary">Browse products</button>
+        </div>
+
+        <div className="mini-info">
+          <span>Same-day delivery</span>
+          <span>Certified products</span>
+          <span>24/7 support</span>
+        </div>
+      </section>
     </main>
   );
 }
