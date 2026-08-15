@@ -37,7 +37,7 @@ function AddProductPage() {
 
   return (
     <section className="admin-page form-section">
-      <Header />
+
       <h2 className="section-title">Add Product</h2>
 
       <form onSubmit={handleSubmit} className="admin-form">
