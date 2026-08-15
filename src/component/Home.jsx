@@ -1,16 +1,18 @@
-import Header from './Header';
+import './style/home.css';
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main>
-        <h1>Drive Your Next Legend</h1>
+    <main className="landing-page">
+      <div className="home">
+        <span className="home-tag">Kappa Alpha</span>
+        <h1>Drive the experience. Own the moment.</h1>
         <p>
-          Discover premium performance cars, luxury classics, and everyday drivers
-          curated for drivers who value power, precision, and style.
+          Discover a curated collection of standout cars built for drivers who
+          want power, precision, and presence in every mile. From thrilling
+          performance machines to refined everyday icons, Kappa Alpha brings the
+          road to life.
         </p>
-      </main>
-    </>
+      </div>
+    </main>
   );
 }
