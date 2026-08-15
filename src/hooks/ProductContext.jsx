@@ -1,8 +1,8 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState,useContext } from "react";
 
 const ProductContext = createContext(null);
 
-async function ProductsProvider({children}){
+export function ProductsProvider({children}){
     //State for storing the products
     const [products, setProducts] = useState([]);
     //State for loading.Used when fetching data
@@ -14,15 +14,19 @@ async function ProductsProvider({children}){
     const fetchProducts = async () => {
         try{
             setLoading(true);
-            const response = fetch ('http://localhost:3000/products');
+            const response = await fetch('http://localhost:3000/products');
 
             if (!response.ok){
                 throw new Error("Could not fetch the products");
                 return;
             }
-            const data = await response.json();
-            setProducts(data);
-            setError(null);
+            else{
+                const data = await response.json();
+                setProducts(data);
+                setError(null);
+                return;
+            }
+            
         }
         catch (err){
             console.error(err);
@@ -39,7 +43,7 @@ async function ProductsProvider({children}){
 
     const addProduct = async (newProduct) =>{
         try{
-            const response = fetch('http://localhost:3000/products', {
+            const response = await fetch('http://localhost:3000/products', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(newProduct),
@@ -63,7 +67,7 @@ async function ProductsProvider({children}){
 
     const deleteProduct = async (productId) => {
         try{
-            const response = fetch(`http://localhost:3000/products/${productId}`, {
+            const response = await fetch(`http://localhost:3000/products/${productId}`, {
                 method: 'DELETE',
             });
 
@@ -82,7 +86,7 @@ async function ProductsProvider({children}){
 
     const updateProduct = async (productId, updatedProduct) => {
         try{
-            const response = fetch(`http://localhost:3000/products/${productId}`, {
+            const response = await fetch(`http://localhost:3000/products/${productId}`, {
                 method: "PUT",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(updatedProduct),
@@ -107,7 +111,7 @@ async function ProductsProvider({children}){
             value = {{
                 products,
                 loading,
-                errror,
+                error,
                 fetchProducts,
                 addProduct,
                 deleteProduct,
@@ -117,4 +121,14 @@ async function ProductsProvider({children}){
             {children}
         </ProductContext.Provider>
     )
+}
+
+export function useProducts(){
+    const context = useContext(ProductContext);
+
+    if(!context){
+        throw new Error('useProducts must be used within a ProductsProvider');
+    }
+
+    return context;
 }

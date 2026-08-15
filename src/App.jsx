@@ -11,23 +11,26 @@ import EditProductPage from './pages/EditProductPage';
 import ProductListPage from './pages/ProductListPage';
 import Home from './component/Home';
 import { Route, Routes } from 'react-router-dom';
+import {ProductsProvider} from './hooks/ProductContext'
 
 function App() {
   return (
     <>
+    <ProductsProvider>
       <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Productcard />} />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Productcard />} />
-
-        <Route path="/admin" element={<Admin />}>
-          <Route index element={<ProductListPage />} />
-          <Route path="products" element={<ProductListPage />} />
-          <Route path="add" element={<AddProductPage />} />
-          <Route path="edit/:id" element={<EditProductPage />} />
-        </Route>
-      </Routes>
+          <Route path="/admin" element={<Admin />}>
+            <Route index element={<ProductListPage />} />
+            <Route path="products" element={<ProductListPage />} />
+            <Route path="add" element={<AddProductPage />} />
+            <Route path="edit/:id" element={<EditProductPage />} />
+          </Route>
+        </Routes>
+    </ProductsProvider>
+      
     </>
   );
 }

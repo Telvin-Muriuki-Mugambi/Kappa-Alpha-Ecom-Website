@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import carData from "/db.json"
 import "./Product.css";
+import { useProducts } from '../hooks/ProductContext';
 
 function Productcard() {
-  const [products, setProducts] = useState(carData.products)
+  const {products} = useProducts();
   const [searchQuery, setSearchQuery] = useState("")
   //search functionality
   const handleSearch = (event) => {
