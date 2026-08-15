@@ -1,32 +1,8 @@
-import React, { useState, useEffect } from 'react';
 import '../styles/admin.css';
+import { useProducts } from '../hooks/ProductContext';
 
 function ProductListPage() {
-  const [products, setProducts] = useState([]);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetch('http://localhost:3000/products')
-      .then((res) => {
-        if (!res.ok) throw new Error('Failed to fetch products');
-        return res.json();
-      })
-      .then((data) => {
-        setProducts(data);
-        setError(null);
-      })
-      .catch((err) => setError(err.message));
-  }, []);
-
-  const handleDelete = (id) => {
-    fetch(`http://localhost:3000/products/${id}`, {
-      method: 'DELETE'
-    })
-      .then(() => {
-        setProducts(products.filter((item) => item.id !== id));
-      })
-      .catch((err) => console.error('Error deleting product:', err));
-  };
+  const {products, error, deleteProduct} = useProducts();
 
   return (
     <section className="admin-page list-section">
@@ -45,7 +21,7 @@ function ProductListPage() {
               <p className="price">${product.price}</p>
               
               <div className="card-buttons">
-                <button className="btn-delete" onClick={() => handleDelete(product.id)}>
+                <button className="btn-delete" onClick={() => deleteProduct(product.id)}>
                   Delete
                 </button>
               </div>
