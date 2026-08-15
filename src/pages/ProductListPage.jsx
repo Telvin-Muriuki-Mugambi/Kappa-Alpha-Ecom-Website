@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../styles/admin.css';
 
 function ProductListPage() {
   const [products, setProducts] = useState([]);
