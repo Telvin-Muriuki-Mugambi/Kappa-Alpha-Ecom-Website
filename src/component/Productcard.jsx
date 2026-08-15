@@ -1,20 +1,19 @@
 import { useState } from 'react'
-import carData from "/db.json"
 import "./Product.css";
 import { useProducts } from '../hooks/ProductContext';
 
 function Productcard() {
-  const {products} = useProducts();
-  const [searchQuery, setSearchQuery] = useState("")
-  //search functionality
+  const { products } = useProducts(); // Use of the products context
+
+  const [searchQuery, setSearchQuery] = useState("");
+
   const handleSearch = (event) => {
-    const query = event.target.value
-    setSearchQuery(query)
-    const filteredProducts = carData.products.filter((product) =>
-      product.name.toLowerCase().includes(query.toLowerCase())
-    )
-    setProducts(filteredProducts)
-  }
+    setSearchQuery(event.target.value);
+  };
+
+  const displayedProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div>
@@ -27,7 +26,7 @@ function Productcard() {
         />
       </div>
       <div className='cards-grid'>
-        {products.map((product) => (
+        {displayedProducts.map((product) => (
           <div key={product.id} className='card'>
             <h2>{product.name}</h2>
         <p className='description'>Description: {product.description}</p>

@@ -110,6 +110,7 @@ export function ProductsProvider({children}){
         <ProductContext.Provider
             value = {{
                 products,
+                setProducts,
                 loading,
                 error,
                 fetchProducts,
