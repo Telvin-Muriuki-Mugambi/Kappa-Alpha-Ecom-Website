@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import Header from '../component/Header';
 import '../styles/admin.css';
+import { useProducts } from '../hooks/ProductContext';
 
 function AddProductPage() {
+  const {addProduct} = useProducts();
+  
   const [formData, setFormData] = useState({
     name: '',
     description: '',
@@ -17,23 +20,26 @@ function AddProductPage() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:3000/products', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log('Product added:', data);
+    try {
+      const productToAdd = {
+        ...formData,
+        price: parseFloat(formData.price)
+      };
+
+      const saved = await addProduct(productToAdd);
+
+      if (saved) {
+        console.log('Product added:', saved);
         setFormData({ name: '', description: '', origin: '', price: '' });
-      })
-      .catch((err) => console.error('Error adding product:', err));
+      }
+    } catch (err) {
+      console.error('Error adding product:', err);
+    }
   };
+  console.log(`This is new data added ${formData}`);
 
   return (
     <section className="admin-page form-section">

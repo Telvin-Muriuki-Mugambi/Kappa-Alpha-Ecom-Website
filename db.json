@@ -199,6 +199,20 @@
       "category": "Porsche",
       "origin": "Germany",
       "price": 160700
+    },
+    {
+      "name": "Toyota Defender",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper iaculis lacus et eleifend. Nam cursus massa elit, non mollis diam finibus et. Morbi facilisis aliquet dolor, sit amet maximus sapien volutpat vitae. Vivamus ullamcorper eros sed est pharetra tincidunt. Vestibulum ac interdum purus, vitae finibus neque. Integer libero velit, consequat ac ornare vitae, sollicitudin ut libero. ",
+      "origin": "Japan",
+      "price": 120000,
+      "id": "XrKgO_50z3c"
+    },
+    {
+      "name": "Toyota Defender",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper iaculis lacus et eleifend. Nam cursus massa elit, non mollis diam finibus et. Morbi facilisis aliquet dolor, sit amet maximus sapien volutpat vitae. Vivamus ullamcorper eros sed est pharetra tincidunt. Vestibulum ac interdum purus, vitae finibus neque. Integer libero velit, consequat ac ornare vitae, sollicitudin ut libero. ",
+      "origin": "Japan",
+      "price": 23000,
+      "id": "RXw3TIjLeus"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
