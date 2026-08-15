@@ -1,0 +1,58 @@
+.mainpage-shell {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #071827 0%, #0d1f38 100%);
+  color: #edf6ff;
+}
+
+.mainpage-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.mainpage-content h1 {
+  margin: 0 0 0.75rem;
+  font-size: 2.2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #edf6ff;
+}
+
+.mainpage-content p {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  color: rgba(237, 246, 255, 0.8);
+}
+
+.admin-layout {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #071827 0%, #0d1f38 100%);
+  color: #edf6ff;
+}
+
+.admin-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem 0.2rem;
+}
+
+.admin-link {
+  color: #edf6ff;
+  text-decoration: none;
+  font: 600 0.68rem 'Inter', sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.7rem;
+  transition: opacity 0.2s ease;
+}
+
+.admin-link:hover,
+.admin-link.active {
+  opacity: 0.9;
+  background: rgba(255,255,255,0.04);
+}
+

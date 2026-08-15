@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Header from '../component/Header';
+import '../styles/admin.css';
 
 function AddProductPage() {
   const [formData, setFormData] = useState({
@@ -34,9 +36,10 @@ function AddProductPage() {
   };
 
   return (
-    <section className="form-section">
+    <section className="admin-page form-section">
+      <Header />
       <h2 className="section-title">Add Product</h2>
-      
+
       <form onSubmit={handleSubmit} className="admin-form">
         <div className="form-title">
           <span className="icon">🏎️</span>
