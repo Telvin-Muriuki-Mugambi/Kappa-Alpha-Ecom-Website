@@ -1,12 +1,11 @@
 import { useState } from 'react'
-import "./Product.css";
+import "../styles/Product.css";
 import { useProducts } from '../hooks/ProductContext';
 
 function Productcard() {
   const { products } = useProducts(); // Use of the products context
-
   const [searchQuery, setSearchQuery] = useState("");
-
+  
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);
   };

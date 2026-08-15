@@ -49,7 +49,6 @@ function EditProductPage() {
 
       <form onSubmit={handleSubmit} className="admin-form">
         <div className="form-title">
-          <span className="icon">✏️</span>
           <h3>EDIT PRODUCT</h3>
         </div>
 
