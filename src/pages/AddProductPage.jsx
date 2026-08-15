@@ -49,12 +49,11 @@ function AddProductPage() {
 
       <form onSubmit={handleSubmit} className="admin-form">
         <div className="form-title">
-          <span className="icon">🏎️</span>
           <h3>ADD PRODUCT</h3>
         </div>
 
         <div className="field-group">
-          <span className="field-icon">🏷️</span>
+          <span className="field-icon">Car Name</span>
           <input
             type="text"
             name="name"
@@ -66,7 +65,7 @@ function AddProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">📄</span>
+          <span className="field-icon">Car Description</span>
           <input
             type="text"
             name="description"
@@ -78,7 +77,7 @@ function AddProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">🌐</span>
+          <span className="field-icon">Car Origin</span>
           <input
             type="text"
             name="origin"
@@ -90,7 +89,7 @@ function AddProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">📂</span>
+          <span className="field-icon">Category</span>
           <input
             type="text"
             name="category"
@@ -102,7 +101,7 @@ function AddProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">$</span>
+          <span className="field-icon">Car Price</span>
           <input
             type="number"
             name="price"

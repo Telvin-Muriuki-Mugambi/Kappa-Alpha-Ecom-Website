@@ -5,15 +5,23 @@ import { useProducts } from '../hooks/ProductContext';
 function EditProductPage() {
   const { updateProduct } = useProducts();
 
-  const [productId, setProductId] = useState('');
-  const [name, setName] = useState('');
-  const [description, setDescription] = useState('');
-  const [category, setCategory] = useState('');
-  const [origin, setOrigin] = useState('');
-  const [price, setPrice] = useState('');
+  const [form, setForm] = useState({
+    productId: '',
+    name: '',
+    description: '',
+    category: '',
+    origin: '',
+    price: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const { productId, name, description, category, origin, price } = form;
     if (!productId) return;
 
     const updated = {
@@ -28,13 +36,7 @@ function EditProductPage() {
       const saved = await updateProduct(productId, updated);
       if (saved) {
         console.log('Product updated:', saved);
-        // clear form
-        setProductId('');
-        setName('');
-        setDescription('');
-        setCategory('');
-        setOrigin('');
-        setPrice('');
+        setForm({ productId: '', name: '', description: '', category: '', origin: '', price: '' });
       }
     } catch (err) {
       console.error('Error updating product:', err);
@@ -55,64 +57,70 @@ function EditProductPage() {
           <span className="field-icon">#</span>
           <input
             type="text"
-            placeholder="Product ID"
-            value={productId}
-            onChange={(e) => setProductId(e.target.value)}
+            name="productId"
+            placeholder="Car ID"
+            value={form.productId}
+            onChange={handleChange}
             required
           />
         </div>
 
         <div className="field-group">
-          <span className="field-icon">🏷️</span>
+          <span className="field-icon">Car Name</span>
           <input
             type="text"
+            name="name"
             placeholder="Edit the new name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={form.name}
+            onChange={handleChange}
             required
           />
         </div>
 
         <div className="field-group">
-          <span className="field-icon">📄</span>
+          <span className="field-icon">Car Description</span>
           <input
             type="text"
+            name="description"
             placeholder="Edit the new description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
+            value={form.description}
+            onChange={handleChange}
             required
           />
         </div>
 
         <div className="field-group">
-          <span className="field-icon">📂</span>
+          <span className="field-icon">Category</span>
           <input
             type="text"
+            name="category"
             placeholder="Edit the new category"
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
+            value={form.category}
+            onChange={handleChange}
             required
           />
         </div>
 
         <div className="field-group">
-          <span className="field-icon">🌐</span>
+          <span className="field-icon">Origin</span>
           <input
             type="text"
+            name="origin"
             placeholder="Edit the new origin"
-            value={origin}
-            onChange={(e) => setOrigin(e.target.value)}
+            value={form.origin}
+            onChange={handleChange}
             required
           />
         </div>
 
         <div className="field-group">
-          <span className="field-icon">$</span>
+          <span className="field-icon">Car Price</span>
           <input
             type="number"
+            name="price"
             placeholder="New Price"
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
+            value={form.price}
+            onChange={handleChange}
             required
           />
         </div>

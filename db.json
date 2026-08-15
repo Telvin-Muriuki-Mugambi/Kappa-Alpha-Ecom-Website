@@ -209,11 +209,12 @@
       "id": "XrKgO_50z3c"
     },
     {
-      "name": "Toyota Defender",
+      "name": "Mazda Demio",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper iaculis lacus et eleifend. Nam cursus massa elit, non mollis diam finibus et. Morbi facilisis aliquet dolor, sit amet maximus sapien volutpat vitae. Vivamus ullamcorper eros sed est pharetra tincidunt. Vestibulum ac interdum purus, vitae finibus neque. Integer libero velit, consequat ac ornare vitae, sollicitudin ut libero. ",
+      "category": "Mazda",
       "origin": "Japan",
-      "price": 23000,
-      "id": "RXw3TIjLeus"
+      "price": 1200,
+      "id": "28I_59PJ1Ds"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

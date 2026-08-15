@@ -1,8 +1,3 @@
-//This is where the routing will be defined. Use of react router is adviced.
-//I have installed react router and material UI for UI elements and components to the repository
-//To avoid merge conflicts, do not edit this page. Leave it for the scrum master.
-//I have a sample DB with products run with npm run server
-
 import Productcard from './component/Productcard';
 import Header from './component/Header';
 import Admin from './pages/Admin';
@@ -12,7 +7,7 @@ import ProductListPage from './pages/ProductListPage';
 import Home from './component/Home';
 import { Route, Routes } from 'react-router-dom';
 import {ProductsProvider} from './hooks/ProductContext'
-
+//The context provider is wrapped on top of header and route component
 function App() {
   return (
     <>
