@@ -66,7 +66,7 @@ function AddProductPage() {
 
         <div className="field-group">
           <span className="field-icon">Description</span>
-          <input
+          <textarea
             type="text"
             name="description"
             placeholder="Description"

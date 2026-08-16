@@ -199,6 +199,14 @@
       "category": "Antimalarials & Antiparasitics",
       "origin": "Kenya",
       "price": 320
+    },
+    {
+      "name": "Lorem Ipsum",
+      "description": "Lorem Ipsum ipdor. Doir.essedede ",
+      "category": "Syrup",
+      "origin": "United States",
+      "price": 120,
+      "id": "9ndTphzHWrQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
