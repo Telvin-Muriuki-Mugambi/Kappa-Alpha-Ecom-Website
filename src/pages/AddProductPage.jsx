@@ -47,10 +47,7 @@ function AddProductPage() {
       <h2 className="section-title">Add Product</h2>
 
       <form onSubmit={handleSubmit} className="admin-form">
-        <div className="form-title">
-          <h3>ADD PRODUCT</h3>
-        </div>
-
+     
         <div className="field-group">
           <span className="field-icon">Name</span>
           <input
