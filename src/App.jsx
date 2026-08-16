@@ -8,7 +8,7 @@ import Home from './component/Home';
 import { Route, Routes } from 'react-router-dom';
 import {ProductsProvider} from './hooks/ProductContext'
 import Footer from './component/Footer';
-//The context provider is wrapped on top of header and route component
+//The context provider is wrapped to encapsulate the entire application since it is accessed by most components
 function App() {
   return (
     <>

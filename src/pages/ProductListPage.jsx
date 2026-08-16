@@ -10,7 +10,7 @@ function ProductListPage() {
 
       {error ? (
         <div className="error-message">
-          <p>⚠️ {error}. Ensure your JSON server is running on port 3000.</p>
+          <p>{error}. Ensure your JSON server is running on port 3000.</p>
         </div>
       ) : (
         <div className="product-grid">
@@ -18,7 +18,7 @@ function ProductListPage() {
             <div key={product.id} className="product-card">
               <h3>{product.name || 'Vehicle Item'}</h3>
               <p className="description">{product.description || 'No description available.'}</p>
-              <p className="price">${product.price}</p>
+              <p className="price">{product.price} KES</p>
               
               <div className="card-buttons">
                 <button className="btn-delete" onClick={() => deleteProduct(product.id)}>
