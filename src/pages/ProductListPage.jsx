@@ -10,7 +10,7 @@ function ProductListPage() {
 
       {error ? (
         <div className="error-message">
-          <p>⚠️ {error}. Ensure your JSON server is running on port 3000.</p>
+          <p>{error}. Ensure your JSON server is running on port 3000.</p>
         </div>
       ) : (
         <div className="product-grid">
