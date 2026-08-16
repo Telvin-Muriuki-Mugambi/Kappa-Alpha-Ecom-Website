@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router';
 import '../styles/home.css';
-
+import './Productcard'
+import Productcard from './Productcard';
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <main className="landing-page">
       <section className="hero">
@@ -13,7 +16,7 @@ export default function Home() {
         </p>
 
         <div className="actions">
-          <button>Shop now</button>
+          <button onClick={() => navigate('/products')}>Shop now</button>
           <button className="secondary">Join our newsletter</button>
         </div>
 

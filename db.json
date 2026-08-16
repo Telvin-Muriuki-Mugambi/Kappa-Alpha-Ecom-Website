@@ -6,7 +6,7 @@
       "description": "Fast relief from tough pain including headache, toothache, and fever; enriched with caffeine.",
       "category": "Analgesics & Antipyretics",
       "origin": "Kenya",
-      "price": 120.00
+      "price": 120
     },
     {
       "id": "med-002",
@@ -14,7 +14,7 @@
       "description": "Affordable dual-action pain reliever containing Paracetamol and Aspirin for fast body pain relief.",
       "category": "Analgesics & Antipyretics",
       "origin": "Kenya",
-      "price": 80.00
+      "price": 80
     },
     {
       "id": "med-003",
@@ -22,7 +22,7 @@
       "description": "Bulk pack of generic paracetamol for fever reduction and mild to moderate pain management.",
       "category": "Analgesics & Antipyretics",
       "origin": "Kenya",
-      "price": 150.00
+      "price": 150
     },
     {
       "id": "med-004",
@@ -30,7 +30,7 @@
       "description": "Non-steroidal anti-inflammatory drug (NSAID) for relief from swelling, joint pain, and cramps.",
       "category": "Analgesics & Antipyretics",
       "origin": "Kenya",
-      "price": 90.00
+      "price": 90
     },
     {
       "id": "med-005",
@@ -38,7 +38,7 @@
       "description": "Strawberry-flavored paracetamol syrup designed for gentle fever and pain relief in infants.",
       "category": "Analgesics & Antipyretics",
       "origin": "Kenya",
-      "price": 380.00
+      "price": 380
     },
     {
       "id": "med-006",
@@ -46,7 +46,7 @@
       "description": "Essential broad-spectrum penicillin antibiotic for treating respiratory and bacterial infections.",
       "category": "Antibiotics & Anti-infectives",
       "origin": "Kenya",
-      "price": 200.00
+      "price": 200
     },
     {
       "id": "med-007",
@@ -54,7 +54,7 @@
       "description": "Widely used anti-protozoal and antibacterial drug for stomach upset and intestinal infections.",
       "category": "Antibiotics & Anti-infectives",
       "origin": "Kenya",
-      "price": 110.00
+      "price": 110
     },
     {
       "id": "med-008",
@@ -62,7 +62,7 @@
       "description": "Co-amoxiclav combination antibiotic for severe bacterial chest, ear, and urinary tract infections.",
       "category": "Antibiotics & Anti-infectives",
       "origin": "United Kingdom",
-      "price": 850.00
+      "price": 850
     },
     {
       "id": "med-009",
@@ -70,7 +70,7 @@
       "description": "Broad-spectrum fluoroquinolone antibiotic used for typhoid, urinary, and gut infections.",
       "category": "Antibiotics & Anti-infectives",
       "origin": "India",
-      "price": 180.00
+      "price": 180
     },
     {
       "id": "med-010",
@@ -78,7 +78,7 @@
       "description": "Short-course 3-day macrolide antibiotic for upper respiratory tract and skin infections.",
       "category": "Antibiotics & Anti-infectives",
       "origin": "Kenya",
-      "price": 350.00
+      "price": 350
     },
     {
       "id": "med-011",
@@ -86,7 +86,7 @@
       "description": "Expectorant syrup that breaks down thick chest mucus and thins phlegm for quick relief.",
       "category": "Cough & Cold Remedies",
       "origin": "Kenya",
-      "price": 450.00
+      "price": 450
     },
     {
       "id": "med-012",
@@ -94,7 +94,7 @@
       "description": "Budget-friendly cough and decongestant syrup tailored for common cold symptoms.",
       "category": "Cough & Cold Remedies",
       "origin": "Kenya",
-      "price": 225.00
+      "price": 225
     },
     {
       "id": "med-013",
@@ -102,7 +102,7 @@
       "description": "Combination syrup relieving runny nose, watery eyes, and chest congestion.",
       "category": "Cough & Cold Remedies",
       "origin": "Kenya",
-      "price": 420.00
+      "price": 420
     },
     {
       "id": "med-014",
@@ -110,7 +110,7 @@
       "description": "Mucolytic and bronchodilator syrup that opens up airways for productive coughs.",
       "category": "Cough & Cold Remedies",
       "origin": "India",
-      "price": 380.00
+      "price": 380
     },
     {
       "id": "med-015",
@@ -118,7 +118,7 @@
       "description": "Gentle cough expectorant formulated specifically for young children and toddlers.",
       "category": "Cough & Cold Remedies",
       "origin": "Kenya",
-      "price": 185.00
+      "price": 185
     },
     {
       "id": "med-016",
@@ -126,7 +126,7 @@
       "description": "Proton pump inhibitor (PPI) that reduces excess stomach acid, heart burn, and ulcers.",
       "category": "Gastrointestinal Health",
       "origin": "Kenya",
-      "price": 150.00
+      "price": 150
     },
     {
       "id": "med-017",
@@ -134,7 +134,7 @@
       "description": "Fast-acting antacid powder providing instant cooling relief from acidity and indigestion.",
       "category": "Gastrointestinal Health",
       "origin": "Kenya",
-      "price": 30.00
+      "price": 30
     },
     {
       "id": "med-018",
@@ -142,7 +142,7 @@
       "description": "Low-cost minty chewable antacid neutralizing stomach acid for mwanainchi.",
       "category": "Gastrointestinal Health",
       "origin": "Kenya",
-      "price": 70.00
+      "price": 70
     },
     {
       "id": "med-019",
@@ -150,7 +150,7 @@
       "description": "Targeted anti-spasmodic tablet relieving abdominal cramps, spasms, and stomach pain.",
       "category": "Gastrointestinal Health",
       "origin": "Germany",
-      "price": 260.00
+      "price": 260
     },
     {
       "id": "med-020",
@@ -158,7 +158,7 @@
       "description": "Standard over-the-counter chewable tablets for stomach upset and acid reflux.",
       "category": "Gastrointestinal Health",
       "origin": "Kenya",
-      "price": 100.00
+      "price": 100
     },
     {
       "id": "med-021",
@@ -166,7 +166,7 @@
       "description": "Gold-standard Artemisinin-based Combination Therapy (ACT) for acute uncomplicated malaria.",
       "category": "Antimalarials & Antiparasitics",
       "origin": "Switzerland",
-      "price": 600.00
+      "price": 600
     },
     {
       "id": "med-022",
@@ -174,7 +174,7 @@
       "description": "Affordable generic malaria treatment regimen widely accessible in local pharmacies.",
       "category": "Antimalarials & Antiparasitics",
       "origin": "Kenya",
-      "price": 250.00
+      "price": 250
     },
     {
       "id": "med-023",
@@ -182,7 +182,7 @@
       "description": "Single-dose deworming tablet for adults and children against roundworms and hookworms.",
       "category": "Antimalarials & Antiparasitics",
       "origin": "Kenya",
-      "price": 100.00
+      "price": 100
     },
     {
       "id": "med-024",
@@ -190,7 +190,7 @@
       "description": "Pocket-friendly complete family deworming chewable tablets course.",
       "category": "Antimalarials & Antiparasitics",
       "origin": "Kenya",
-      "price": 60.00
+      "price": 60
     },
     {
       "id": "med-025",
@@ -198,7 +198,8 @@
       "description": "Palatable pediatric antimalarial suspension for treating malaria in young children.",
       "category": "Antimalarials & Antiparasitics",
       "origin": "Kenya",
-      "price": 320.00
+      "price": 320
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
