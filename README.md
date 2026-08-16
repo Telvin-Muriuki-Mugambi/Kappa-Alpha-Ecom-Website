@@ -46,3 +46,6 @@ State management and global reactive data streams are handled via native and abs
 The architectural node graph below maps out the application's layout hierarchy and structural composition.
 
 <img src="./src/assets/Component-Tree.png" alt="Project Layout Component Tree Diagram" width="500">
+
+## Live Demo Link
+[Kappa Alpha Wellness Store](https://kappa-alpha-ecom-website.vercel.app/)
