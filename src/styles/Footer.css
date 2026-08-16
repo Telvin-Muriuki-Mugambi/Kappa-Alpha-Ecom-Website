@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.footer-section {
+  background: linear-gradient(135deg, #0d2a21, #123d2f 38%, #1a734f);
+  color: rgba(255, 255, 255, 0.88);
+  font-family: 'Inter', sans-serif;
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1fr;
+  gap: 2rem;
+  padding: 3.5rem 6vw 2.5rem;
+  box-sizing: border-box;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-column h3 {
+  margin: 0 0 0.75rem;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.footer-column p,
+.footer-column li {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  font-size: 0.92rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-brand {
+  max-width: 520px;
+}
+
+@media (max-width: 700px) {
+  .footer-section {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 1.25rem 2rem;
+  }
+}

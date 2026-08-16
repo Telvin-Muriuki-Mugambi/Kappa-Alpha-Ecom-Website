@@ -14,7 +14,7 @@ export default function Home() {
 
         <div className="actions">
           <button>Shop now</button>
-          <button className="secondary">Browse products</button>
+          <button className="secondary">Join our newsletter</button>
         </div>
 
         <div className="mini-info">

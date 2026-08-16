@@ -7,6 +7,7 @@ import ProductListPage from './pages/ProductListPage';
 import Home from './component/Home';
 import { Route, Routes } from 'react-router-dom';
 import {ProductsProvider} from './hooks/ProductContext'
+import Footer from './component/Footer';
 //The context provider is wrapped on top of header and route component
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="edit/:id" element={<EditProductPage />} />
           </Route>
         </Routes>
+      <Footer/>
     </ProductsProvider>
       
     </>
