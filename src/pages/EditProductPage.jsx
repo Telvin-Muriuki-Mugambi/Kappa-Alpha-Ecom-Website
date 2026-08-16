@@ -21,6 +21,7 @@ function EditProductPage() {
   const handleSelect = (e) => {
     const selectedId = e.target.value;
     const product = products.find((p) => String(p.id) === String(selectedId));
+    console.log(`The selected product is ${product.name}`)
     if (!product) {
       setForm({ productId: '', name: '', description: '', category: '', origin: '', price: '' });
       return;

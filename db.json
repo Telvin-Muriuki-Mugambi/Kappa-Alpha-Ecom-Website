@@ -207,6 +207,14 @@
       "origin": "United States",
       "price": 120,
       "id": "9ndTphzHWrQ"
+    },
+    {
+      "name": "Epharim",
+      "description": "loemdedmededed",
+      "category": "deded",
+      "origin": "jjidjied",
+      "price": 223,
+      "id": "neLAFlccRio"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -29,7 +29,6 @@ function AddProductPage() {
         ...formData,
         price: parseFloat(formData.price)
       };
-
       const saved = await addProduct(productToAdd);
 
       if (saved) {
@@ -40,7 +39,7 @@ function AddProductPage() {
       console.error('Error adding product:', err);
     }
   };
-  console.log(`This is new data added ${formData}`);
+
 
   return (
     <section className="admin-page form-section">
