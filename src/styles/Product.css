@@ -11,10 +11,14 @@
 
 .shop-page {
   display: flex;
-  flex-direction: column;
+  flex-direction: flex;
   background: linear-gradient(135deg, #edfdf2, #dff4e8);
   padding: 2rem 6vw 0.75rem;
   box-sizing: border-box;
+}
+.shopping-cart{
+  margin-left: auto;
+  padding-top: 10px;
 }
 
 .search-input {

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import "../styles/Product.css";
 import { useProducts } from '../hooks/ProductContext';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 function Productcard() {
   const { products } = useProducts(); // Use of the products context
@@ -24,6 +25,10 @@ function Productcard() {
           value={searchQuery}
           onChange={handleSearch}
         />
+        <span className='shopping-cart' onClick={() => console.log("Shopping cart clicked")}>
+          <ShoppingCartOutlinedIcon style={{color:'green'}}/>
+        </span>
+        
       </div>
       <div className='cards-grid'>
         {displayedProducts.map((product) => (
