@@ -18,7 +18,7 @@ function ProductListPage() {
             <div key={product.id} className="product-card">
               <h3>{product.name || 'Vehicle Item'}</h3>
               <p className="description">{product.description || 'No description available.'}</p>
-              <p className="price">${product.price}</p>
+              <p className="price">{product.price} KES</p>
               
               <div className="card-buttons">
                 <button className="btn-delete" onClick={() => deleteProduct(product.id)}>

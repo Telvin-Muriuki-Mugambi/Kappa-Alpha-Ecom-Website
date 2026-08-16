@@ -30,7 +30,7 @@ function Productcard() {
           <div key={product.id} className='card'>
             <h2>{product.name}</h2>
         <p className='description'>Description: {product.description}</p>
-            <p className='price'>Price: ${product.price.toFixed(2)}</p>
+            <p className='price'>Price: {product.price.toFixed(2)} KES</p>
             <p className='category'>Category: {product.category}</p>
             <p className='origin'>Origin: {product.origin}</p>
           </div>

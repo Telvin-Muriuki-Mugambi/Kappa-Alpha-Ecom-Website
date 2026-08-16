@@ -57,7 +57,7 @@ function EditProductPage() {
           <input
             type="text"
             name="productId"
-            placeholder="Car ID"
+            placeholder="Product ID"
             value={form.productId}
             onChange={handleChange}
             required
@@ -65,7 +65,7 @@ function EditProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">Car Name</span>
+          <span className="field-icon">Name</span>
           <input
             type="text"
             name="name"
@@ -77,7 +77,7 @@ function EditProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">Car Description</span>
+          <span className="field-icon">Description</span>
           <input
             type="text"
             name="description"
@@ -113,7 +113,7 @@ function EditProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">Car Price</span>
+          <span className="field-icon">Price</span>
           <input
             type="number"
             name="price"

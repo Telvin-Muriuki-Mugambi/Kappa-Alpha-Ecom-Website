@@ -53,7 +53,7 @@ function AddProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">Car Name</span>
+          <span className="field-icon">Name</span>
           <input
             type="text"
             name="name"
@@ -65,7 +65,7 @@ function AddProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">Car Description</span>
+          <span className="field-icon">Description</span>
           <input
             type="text"
             name="description"
@@ -77,7 +77,7 @@ function AddProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">Car Origin</span>
+          <span className="field-icon">Origin</span>
           <input
             type="text"
             name="origin"
@@ -101,7 +101,7 @@ function AddProductPage() {
         </div>
 
         <div className="field-group">
-          <span className="field-icon">Car Price</span>
+          <span className="field-icon">Price</span>
           <input
             type="number"
             name="price"
