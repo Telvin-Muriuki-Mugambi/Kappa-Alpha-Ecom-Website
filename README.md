@@ -35,6 +35,7 @@ State management and global reactive data streams are handled via native and abs
 | Hook | Architectural Purpose |
 | :--- | :--- |
 | **`useState`** | Manages local UI states, input form bindings, and independent component-level memory allocations. |
+| **`useEffect`** | Handles synchronous and asynchronous side effects. It orchestrates the initial data fetching operations from the JSON server database immediately after components mount to the DOM tree.|
 | **`useContext`** | Drives global state distribution. It provides deeply nested components access to centralized drug data catalogs and CRUD functionalities without prop-drilling. |
 | **`useMemo`** | Caches expensive runtime arithmetic. It dynamically computes total cart pricing arrays only when item quantities or core additions modify the dependencies, preventing unnecessary re-renders. |
 | **`useCart`**| A custom hook encapsulating localized shopping operations (add/remove items, checkout toggles, total item counts). This abstracts complex transactional operations away from the presentation layers. |
