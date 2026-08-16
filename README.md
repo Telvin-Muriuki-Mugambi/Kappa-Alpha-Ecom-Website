@@ -1,27 +1,47 @@
-# Kappa-Alpha-Wellness-Store
+# Kappa Alpha Wellness Store
 
-## Project Introduction
-**Kappa Alpha Wellness store** is a webapp built for the common "mwananchi". Healthcare is a crucial aspect not only in a country's econoy but as well as human wellbeing. This webapp was built to bridge the lack of healthcare service especially in purchasing medical drugs at affordable prices. The application was built with React and Vite and uses JSON server as the database
+##  Project Introduction
+**Kappa Alpha Wellness Store** is a web application designed to democratize access to healthcare infrastructure for the everyday user ("mwananchi"). Recognizing that affordable medication is vital to both human well-being and economic stability, this platform bridges the accessibility gap by offering an intuitive, fast, and budget-friendly digital pharmacy experience.
 
-## Project SetUp
-To set up the project:
-1. Run ```npm install```. To install all the required dependencies
-2. Run ```npm run dev```. This runs the web application and runs on a port. Click it and open it on any browser of your choice
-3. Run ```npm run server```. This utilizes the JSON server and serves as the database for this project
+The application is engineered using **React** and **Vite** for a high-performance frontend interface, backed by a **JSON Server** mock database ecosystem.
 
-## React Hooks breakdown
-React hooks played a key role in state management and information flow for this project. Some of the hooks used include **useState**, **useContext**, **useMemo** and some custome hooks such as **useCart**.
+---
 
-Below is a breakdown of how and why it was used
+##  Project Setup
 
-| Hook | Why |
-| :---     | :---:   
-| **useState** | This was used throughout the application. This was used for accessing memory and storing data which was used.
-| **useContext**  | Some information was required by different components which some of them are deeply nested. Context was used to define some functionalities such as fetching data and performing CRUD functionalities. It was wrapped at the top to give access to any component that used it 
-| **useMemo**  | This was used since calculations was used in the application. It provided the caching for calculation results. Considering that the calculation in this regard was calculating the total price, useMemo was used since the calculation is dynamic. If a user adds a product or removes a product the total should respond quickly
-| **useCart**  | This is a custom hook that was created to encapsulate the shopping functionality. This e-commerce web app is driven by active shopping users hence a smooth shopping experience is required. It utilizes various functions as well as hooks to control logic. This includes calculating the total price, quantity of products selected, list of the shopped prodcuts, the toggling of the shopping cart. This improved modularity and implemented the key aspect of programming, separation of concerns
+Ensure you have [Node.js](https://nodejs.org) installed before proceeding.
+
+1. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+2. **Launch the Local Development Server:**
+   ```bash
+   npm run dev
+   ```
+   *Open the network URL provided in your terminal output to view the app in your browser.*
+3. **Launch the JSON Backend Database:**
+   ```bash
+   npm run server
+   ```
+   *This initializes the mock database endpoint allowing real-time data persistence.*
+
+---
+
+##  React Hooks Architecture
+
+State management and global reactive data streams are handled via native and abstract React hooks.
+
+| Hook | Architectural Purpose |
+| :--- | :--- |
+| **`useState`** | Manages local UI states, input form bindings, and independent component-level memory allocations. |
+| **`useContext`** | Drives global state distribution. It provides deeply nested components access to centralized drug data catalogs and CRUD functionalities without prop-drilling. |
+| **`useMemo`** | Caches expensive runtime arithmetic. It dynamically computes total cart pricing arrays only when item quantities or core additions modify the dependencies, preventing unnecessary re-renders. |
+| **`useCart`**| A custom hook encapsulating localized shopping operations (add/remove items, checkout toggles, total item counts). This abstracts complex transactional operations away from the presentation layers. |
+
+---
 
 ## Component Tree Structure
-The image represents the components and how they were structured. Each node rep a component. It provides a quick overview of the components used.
+The architectural node graph below maps out the application's layout hierarchy and structural composition.
 
-<img src="./src/assets/Component-Tree.png" alt="Project Screenshot" width="500">
+<img src="./src/assets/Component-Tree.png" alt="Project Layout Component Tree Diagram" width="500">
