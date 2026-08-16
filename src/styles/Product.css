@@ -110,6 +110,9 @@
   border-top: 1px dashed #d7e7dd;
   color: #0f5c3d;
 }
+.add-to-cart{
+  margin-left: auto;
+}
 
 @media (max-width: 600px) {
   .shop-page,

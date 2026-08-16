@@ -2,7 +2,7 @@ import { useState } from 'react'
 import "../styles/Product.css";
 import { useProducts } from '../hooks/ProductContext';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-
+import AddCircleOutlinedIcon from '@mui/icons-material/AddCircleOutlined';
 function Productcard() {
   const { products } = useProducts(); // Use of the products context
   const [searchQuery, setSearchQuery] = useState("");
@@ -38,6 +38,10 @@ function Productcard() {
             <p className='price'>Price: {product.price.toFixed(2)} KES</p>
             <p className='category'>Category: {product.category}</p>
             <p className='origin'>Origin: {product.origin}</p>
+            <span className='add-to-cart' onClick={() => console.log(`${product.name} was added to the shopping cart`)}>
+              <AddCircleOutlinedIcon />
+            </span>
+            
           </div>
         ))}
       </div>
