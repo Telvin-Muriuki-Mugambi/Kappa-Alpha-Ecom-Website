@@ -31,6 +31,7 @@ export function useCart() {
             return [...currentItems, safeProduct];
         });
         console.log(`${product.name} was added to the cart`);
+        setIsCartOpen(true);
     };
     //Used to remove the product from the cart by usind the product's ID
     const removeFromCart = (productId) => {
