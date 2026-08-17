@@ -10,15 +10,13 @@ export function AuthProvider({ children }) {
     const login = (username, password) => {
         if (password === ADMIN_PASSWORD && username === ADMIN_USERNAME) {
             setRole("admin");
-            console.log(role);
             return "admin";
         } else {
             setRole("user");
-            console.log(role);
             return "user";
         }
     };
-    console.log(typeof role)
+
 
     const logout = () => setRole("guest");
 

@@ -10,19 +10,19 @@ export default function Login() {
 
     function handleLogin(event) {
         event.preventDefault();
-        const userRole = login(password, username);
+        const userRole = login(username, password);
 
         if (userRole === "admin") {
             navigate("/admin", { replace: true });
         } else {
-            navigate("/home", { replace: true });
+            navigate("/contact", { replace: true });
         }
     }
 
     function proceedAsUser() {
-        console.log("Clicked")
-        login(""); // sets role to 'user'
-        navigate("/home");
+        console.log("Clicked");
+        login("");
+        navigate("/contact");
     }
 
     return (
@@ -57,7 +57,7 @@ export default function Login() {
             Login
             </button>
             <div>
-                <span style={{cursor:'pointer'}} onClick={() => proceedAsUser}><p>Back to Login</p></span>
+                <span style={{cursor:'pointer'}} onClick={proceedAsUser}><p>Contact page</p></span>
             </div>
             
         </form>

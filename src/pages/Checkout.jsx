@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import useCart from "../hooks/AddToCart";
 
 export default function Checkout(){
+    const {checkedItems, totalPrice} = useCart();
+    console.log(checkedItems.length)
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
         firstName: '',
@@ -26,7 +29,9 @@ export default function Checkout(){
         <section className="admin-page form-section">
 
             <h2 className="section-title">Checkout Page</h2>
-
+            <div className="admin-form">
+               
+            </div>
             <form onSubmit={handleCheckout} className="admin-form">
             
                 <div className="field-group">

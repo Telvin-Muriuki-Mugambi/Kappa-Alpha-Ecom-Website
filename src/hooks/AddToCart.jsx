@@ -6,6 +6,7 @@ export function useCart() {
     //Used to toggle the shopping cart visibility
     const [isCartOpen, setIsCartOpen] = useState(false);
     //Function to add a product to the cart
+    const [checkedItems, setCheckedItems] = useState([]);
     const addToCart = (product) => {
         //An object used to store the new added info for the product
         const safeProduct = {
@@ -31,6 +32,7 @@ export function useCart() {
             return [...currentItems, safeProduct];
         });
         console.log(`${product.name} was added to the cart`);
+        setCheckedItems([...checkedItems, cartItems]);
         setIsCartOpen(true);
     };
     //Used to remove the product from the cart by usind the product's ID
@@ -63,6 +65,7 @@ export function useCart() {
         cartItems,
         isCartOpen,
         totalPrice,
+        checkedItems,
         addToCart,
         removeFromCart,
         toggleCart,
