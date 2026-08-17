@@ -8,13 +8,16 @@ import Home from './component/Home';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import {ProductsProvider} from './hooks/ProductContext'
 import Footer from './component/Footer';
-import { AuthProvider } from './hooks/AuthProvider';
+import { AuthProvider, useAuth } from './hooks/AuthProvider';
 import Login from './component/Login';
+import Contact from './pages/Contact';
 //The context provider is wrapped to encapsulate the entire application since it is accessed by most components
 function App() {
   const location = useLocation();
+
   const showLayout = location.pathname !== "/"; // show header/footer after leaving login
 
+  
   return (
     <AuthProvider>
       <ProductsProvider>
@@ -25,12 +28,15 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/products" element={<Productcard />} />
 
-          <Route path="/admin" element={<Admin />}>
-            <Route index element={<ProductListPage />} />
-            <Route path="products" element={<ProductListPage />} />
-            <Route path="add" element={<AddProductPage />} />
-            <Route path="edit/:id" element={<EditProductPage />} />
-          </Route>
+            <Route path="/admin" element={<Admin />}>
+              <Route index element={<ProductListPage />} />
+              <Route path="products" element={<ProductListPage />} />
+              <Route path="add" element={<AddProductPage />} />
+              <Route path="edit/:id" element={<EditProductPage />} />
+            </Route>
+
+            <Route path='/contact' element={<Contact/>}/>
+          
         </Routes>
 
         {showLayout && <Footer />}

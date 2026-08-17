@@ -13,9 +13,9 @@ export default function Login() {
         const userRole = login(password, username);
 
         if (userRole === "admin") {
-            navigate("/admin");
+            navigate("/admin", { replace: true });
         } else {
-            navigate("/home");
+            navigate("/home", { replace: true });
         }
     }
 

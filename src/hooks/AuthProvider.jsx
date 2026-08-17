@@ -5,17 +5,20 @@ const ADMIN_USERNAME = "admin";
 const ADMIN_PASSWORD = "admin101";
 
 export function AuthProvider({ children }) {
-    const [role, setRole] = useState("guest");
+    const [role, setRole] = useState();
 
-    const login = (password, username) => {
+    const login = (username, password) => {
         if (password === ADMIN_PASSWORD && username === ADMIN_USERNAME) {
             setRole("admin");
+            console.log(role);
             return "admin";
         } else {
             setRole("user");
+            console.log(role);
             return "user";
         }
     };
+    console.log(typeof role)
 
     const logout = () => setRole("guest");
 
