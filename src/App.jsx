@@ -11,6 +11,7 @@ import Footer from './component/Footer';
 import { AuthProvider, useAuth } from './hooks/AuthProvider';
 import Login from './component/Login';
 import Contact from './pages/Contact';
+import Checkout from './pages/Checkout';
 //The context provider is wrapped to encapsulate the entire application since it is accessed by most components
 function App() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/products" element={<Productcard />} />
+          <Route path='/checkout' element={<Checkout/>}/>
 
             <Route path="/admin" element={<Admin />}>
               <Route index element={<ProductListPage />} />

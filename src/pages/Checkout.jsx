@@ -43,7 +43,7 @@ export default function Checkout(){
 
                 <div className="field-group">
                 <span className="field-icon">Last Name</span>
-                <textarea
+                <input
                     type="text"
                     name="lastName"
                     placeholder="Enter your last name"
