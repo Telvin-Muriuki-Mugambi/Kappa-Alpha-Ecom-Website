@@ -8,6 +8,7 @@ import Home from './component/Home';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { ProductsProvider } from './hooks/ProductContext';
 import Footer from './component/Footer';
+
 import { AuthProvider, useAuth } from './hooks/AuthProvider';
 import Login from './component/Login';
 import Contact from './pages/Contact';
@@ -19,6 +20,9 @@ function AppRoutes() {
 
   const showLayout = location.pathname !== '/';
   const isAdmin = role === 'admin';
+
+
+//The context provider is wrapped to encapsulate the entire application since it is accessed by most components
 
   return (
     <>
