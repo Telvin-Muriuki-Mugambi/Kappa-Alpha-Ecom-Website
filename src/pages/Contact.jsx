@@ -19,9 +19,11 @@ export default function Contact(){
         <p className="contact-line"><PhoneOutlined fontSize="small"/> Phone: <a href="tel:+254712345678">+254 712 345 678</a></p>
 
         <p className="contact-line">
-          <Instagram fontSize="small"/> <a href="https://instagram.com/kappa_alpha" target="_blank" rel="noreferrer">@kappa_alpha</a>
-          &nbsp;•&nbsp;
-          <Twitter fontSize="small"/> <a href="https://x.com/kappa_alpha" target="_blank" rel="noreferrer">@kappa_alpha</a>
+          <Instagram fontSize="small"/> Instagram: <a href="https://instagram.com/kappa_alpha" target="_blank" rel="noreferrer">@kappa_alpha</a>
+        </p>
+
+        <p className="contact-line">
+          <Twitter fontSize="small"/> X: <a href="https://x.com/kappa_alpha" target="_blank" rel="noreferrer">@kappa_alpha</a>
         </p>
 
         <p className="contact-line"><LocationOn fontSize="small"/> In person: Bunge Towers, Nairobi — <a href="https://www.google.com/maps/search/?api=1&query=Bunge+Towers+Nairobi" target="_blank" rel="noreferrer">View on Google Maps</a></p>
