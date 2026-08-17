@@ -4,12 +4,13 @@ import { useProducts } from '../hooks/ProductContext';
 import { useCart } from '../hooks/AddToCart';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import AddCircleOutlinedIcon from '@mui/icons-material/AddCircleOutlined';
+import { useNavigate } from 'react-router';
 
 function Productcard() {
   const { products } = useProducts();
   const { cartItems, totalPrice, addToCart, removeFromCart, isCartOpen, toggleCart } = useCart();
   const [searchQuery, setSearchQuery] = useState('');
-
+  const navigate = useNavigate();
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);
   };
@@ -71,7 +72,7 @@ function Productcard() {
                 <strong>KES {Number(totalPrice).toFixed(2)}</strong>
               </div>
 
-              <button type='button' className='checkout-btn'>Proceed to checkout</button>
+              <button type='button' className='checkout-btn' onClick={() => navigate('/checkout')}>Proceed to checkout</button>
             </>
           )}
         </aside>
