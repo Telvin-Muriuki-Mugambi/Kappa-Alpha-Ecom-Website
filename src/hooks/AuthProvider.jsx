@@ -1,13 +1,14 @@
 import { createContext, useContext, useState } from "react";
 
 const AuthContext = createContext(null);
+const ADMIN_USERNAME = "admin";
 const ADMIN_PASSWORD = "admin101";
 
 export function AuthProvider({ children }) {
     const [role, setRole] = useState("guest");
 
-    const login = (password) => {
-        if (password === ADMIN_PASSWORD) {
+    const login = (password, username) => {
+        if (password === ADMIN_PASSWORD && username === ADMIN_USERNAME) {
             setRole("admin");
             return "admin";
         } else {
