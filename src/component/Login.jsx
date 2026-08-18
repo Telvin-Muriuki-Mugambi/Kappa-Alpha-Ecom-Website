@@ -56,9 +56,7 @@ export default function Login() {
             <button type="submit" className="submit-btn">
             Login
             </button>
-            <div>
-                <span style={{cursor:'pointer'}} onClick={proceedAsUser}><p>Contact page</p></span>
-            </div>
+
             
         </form>
         </section>
