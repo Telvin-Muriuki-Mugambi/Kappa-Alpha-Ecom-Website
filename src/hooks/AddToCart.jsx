@@ -32,7 +32,7 @@ export function useCart() {
             return [...currentItems, safeProduct];
         });
         console.log(`${product.name} was added to the cart`);
-        setCheckedItems([...checkedItems, cartItems]);
+        setCheckedItems(() => [...checkedItems, cartItems]);
         setIsCartOpen(true);
     };
     //Used to remove the product from the cart by usind the product's ID
