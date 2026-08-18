@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../styles/Product.css';
 import { useProducts } from '../hooks/ProductContext';
-import { useCart } from '../hooks/AddToCart';
+import { useCart } from '../hooks/CartContext';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import AddCircleOutlinedIcon from '@mui/icons-material/AddCircleOutlined';
 import { useNavigate } from 'react-router';

@@ -7,6 +7,7 @@ import ProductListPage from './pages/ProductListPage';
 import Home from './component/Home';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { ProductsProvider } from './hooks/ProductContext';
+import { CartProvider } from './hooks/CartContext';
 import Footer from './component/Footer';
 
 import { AuthProvider, useAuth } from './hooks/AuthProvider';
@@ -55,9 +56,11 @@ function AppRoutes() {
 function App() {
   return (
     <AuthProvider>
-      <ProductsProvider>
-        <AppRoutes />
-      </ProductsProvider>
+      <CartProvider>
+        <ProductsProvider>
+          <AppRoutes />
+        </ProductsProvider>
+      </CartProvider>
     </AuthProvider>
   );
 }
